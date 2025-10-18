@@ -277,3 +277,6 @@ console.log(Object.isFrozen(myaddress))
 //preventExtensions -- prevent from add
 //sealed -- prevent from add , delete
 //freeze -- prevent from reassign , add , delete
+
+
+//obj -- prop , methods , iterator , ass , class , proprtype , get , set , this , destruting , clone , mangement , protection
