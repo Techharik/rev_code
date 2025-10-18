@@ -82,3 +82,53 @@ console.log(nums.toPrecision(2)) //without decimals string;
 let string = '1234';
 console.log(Number(string)) //number
 console.log(Boolean(string)) //true
+
+
+//reference ds --- has objec
+//array - is also a object;
+
+//In js is array are hertrogenorus dynamic and basically type of object;
+
+let arr = [1, '2', 3, 3, 10, 20];
+console.log(arr);
+
+
+// array methods push , pop , join , concat , shift , unshift , 
+// search first indeOF , lastindexOF , find method , includes
+
+//search:
+console.log(arr.indexOf(1)); //return the index
+console.log(arr.indexOf(3)); //return the index
+console.log(arr.lastIndexOf(3)) //start from end and find
+//using tha find methos
+
+console.log('find --- ', arr.find((x) => x > 2)) //takes of  a function and return the matched conditions
+
+console.log('find --- ', arr.findIndex((x) => x > 2)) //takes of  a function and return the matched conditions
+console.log('find --- ', arr.findLastIndex((x) => x > 2)) //takes of  a function and return the matched conditions
+//iterators:
+// let arr = new Array(100).fill(0); create a arrays.
+
+// map , filter , reduce , reduceRight , every --return boolean , some --returns a booleand , key values, entries , spread , rest , from
+//sorting:
+//sort method to storing and revese to reverse the there tosrot ans to reverser for seprate array;
+
+// console.log(arr.sort()); //[ 1, 10, '2', 20, 3, 3 ] -- it works good for the the chars alphabets not for numbver
+console.log(arr.sort((a, b) => b - a)); // use combare functions: desc
+console.log(arr.sort((a, b) => a - b)); // use combare functions: desc
+
+
+console.log(arr.at(1))
+console.log(arr.concat(1))
+console.log(arr.entries()) //key and value
+
+
+
+//array sorting based on the reference
+
+let reference = ['x', 'y', 'z'];
+let inputArray = ['y', 'x', 'z', 'y', 'z'];
+
+console.log(inputArray.sort((a, b) => reference.indexOf(a) - reference.indexOf(b)));
+
+
