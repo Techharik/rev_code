@@ -268,3 +268,12 @@ let myaddress = {
     city: 'odc'
 };
 
+Object.isFrozen(myaddress);
+
+myaddress.add = 'yy'
+console.log(myaddress)
+console.log(Object.isFrozen(myaddress))
+
+//preventExtensions -- prevent from add
+//sealed -- prevent from add , delete
+//freeze -- prevent from reassign , add , delete
