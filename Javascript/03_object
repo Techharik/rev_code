@@ -204,3 +204,67 @@ deepClonedReference.name = 'sabari';
 deepClonedReference.address.pincode = '212'
 console.log(myObjected)
 console.log(deepClonedReference) //
+
+
+
+// object iterators -- > object.
+
+let newObj = {
+    name: 'Hello',
+    age: 24
+};
+
+console.log(Object.entries(newObj)) //returns the array of key value pairs
+console.log(Object.keys(newObj)); //array of keys
+console.log(Object.values(newObj)) //array of values
+
+for (const prop in newObj) {
+    console.log(newObj[prop])
+}
+
+let myarr = [1, 2, 3, 4, 5];
+
+for (const myprop of myarr) {
+    console.log(myprop)
+}
+
+//managements:
+
+Object.defineProperty(newObj, "name", {
+    enumerable: false, //cannot read or loop
+    writable: false, //cannot re write the property
+    configurable: false //cannot delete the property
+})
+
+
+newObj.name = 'aa'
+console.log(newObj)
+
+for (const prop in newObj) {
+    console.log(newObj[prop])
+};
+
+
+
+//get and set - used to get a property and set a property in a object elements:
+
+const objectNew = {
+    name: 'Hello',
+    second: 'world',
+    get represent() {
+        return this.name + 'Hello'
+    },
+    set nameSetter(val) {
+        this.name = val
+    }
+}
+objectNew.nameSetter = 'welcome ';
+
+console.log(objectNew.name)
+console.log(objectNew.represent)
+
+let myaddress = {
+    add: 'Dind',
+    city: 'odc'
+};
+
