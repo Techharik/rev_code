@@ -30,29 +30,29 @@ const DataContextProvider = ({ children }) => {
     // const [data, setData] = useState([]);
     const [state, dispatch] = useReducer(dataReducer, InitialState);
 
-    useEffect(() => {
-        dispatch({
-            type: 'FETCH_START'
-        })
-        try {
-            const res = async function () {
-                const data = await fetch('https://fakestoreapi.com/products');
-                const result = await data.json();
-                dispatch({
-                    type: 'FETCH_SUCCESS',
-                    payload: result
-                })
-            }
-            res()
-        } catch (e) {
-            dispatch({
-                type: 'FETCH_FAIL',
-                payload: e.message
-            })
-        }
+    // useEffect(() => {
+    //     dispatch({
+    //         type: 'FETCH_START'
+    //     })
+    //     try {
+    //         const res = async function () {
+    //             const data = await fetch('https://fakestoreapi.com/products');
+    //             const result = await data.json();
+    //             dispatch({
+    //                 type: 'FETCH_SUCCESS',
+    //                 payload: result
+    //             })
+    //         }
+    //         res()
+    //     } catch (e) {
+    //         dispatch({
+    //             type: 'FETCH_FAIL',
+    //             payload: e.message
+    //         })
+    //     }
 
 
-    }, [])
+    // }, [])
 
     return <DataContext.Provider value={{ state }}>
         {children}
