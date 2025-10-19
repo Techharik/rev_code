@@ -18,7 +18,7 @@ import {
   QueryClient,
   QueryClientProvider,
 } from '@tanstack/react-query'
-import Query from './QueryCalls/QueryApp'
+import QueryApiCall from './QueryCalls/QueryApiCall'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
 
 
@@ -37,7 +37,7 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
 
             <Route path='/' element={<User />} />
-            <Route path='/user' element={<Query />} />
+            <Route path='/user' element={<QueryApiCall />} />
             <Route path='/recoil' element={<Recoil />} />
             <Route path='/test' element={<Test />} />
             <Route path='/redux-state' element={<UserComponnet />} />
