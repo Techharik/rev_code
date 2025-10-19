@@ -9,7 +9,6 @@ export default function AddProduct() {
         queryKey: ['items'],
         queryFn: api.getItems,
         staleTime: 1000 * 60 * 5,
-
     })
 
     // ✅ mutation for POST
