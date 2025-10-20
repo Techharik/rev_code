@@ -1,5 +1,20 @@
 import { describe, it, expect, test } from 'vitest';
-import { add } from './Operation'
+import { add, fetchData } from './Operation'
+
+
+const fakeData = {
+    "category": "men's clothing",
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "id": 1,
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png",
+    "price": 109.95,
+    "rating": {
+        "count": 120,
+        "rate": 3.9,
+    },
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+}
+
 
 describe("Math Utilities", () => {
 
@@ -55,5 +70,10 @@ describe('Multiple Parameterized Testing', () => {
         [3, 2, 6]
     ])('Miltiply the multiple param', (a, b, expected) => {
         expect(a * b).toBe(expected)
+    })
+
+    it('Fetching the data from a api call', async () => {
+        const result = await fetchData();
+        expect(result).toContainEqual(fakeData)
     })
 })
