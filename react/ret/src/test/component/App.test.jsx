@@ -37,18 +37,16 @@ describe('Profile Card test Cases', () => {
         const props = { name: 'Hari', age: "20", isOnline: true }
         render(<ProfileCard {...props} />);
 
-        //
         const name = screen.getByText(props.name);
         const age = screen.getByText('Age: 20');
         const isOnline = screen.getByText('Online');
-        expect(name).toBeInTheDocument()
-        expect(age).toBeTruthy()
-        expect(isOnline).toBeTruthy()
 
+        expect(name).toBeInTheDocument();
+        expect(age).toBeTruthy();
+        expect(isOnline).toBeTruthy();
 
         const status = screen.getByText("Online");
         expect(status).toHaveClass("online");
-
         screen.debug()
     })
 })

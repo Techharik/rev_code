@@ -20,7 +20,7 @@ import {
 } from '@tanstack/react-query'
 import QueryApiCall from './QueryCalls/QueryApiCall'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-
+import Motion from './motion/Motion'
 
 export const queryClient = new QueryClient();
 createRoot(document.getElementById('root')!).render(
@@ -37,6 +37,7 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
 
             <Route path='/' element={<User />} />
+            <Route path='/motion' element={<Motion />} />
             <Route path='/user' element={<QueryApiCall />} />
             <Route path='/recoil' element={<Recoil />} />
             <Route path='/test' element={<Test />} />
