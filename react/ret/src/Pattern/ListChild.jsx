@@ -2,7 +2,7 @@ import React from "react";
 
 const ListChild = ({ props }) => {
     console.log(props)
-    return <div>ListChild</div>;
+    return <div>{props.name}</div>;
 };
 
 export default ListChild;
