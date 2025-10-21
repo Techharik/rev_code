@@ -3,6 +3,8 @@ import React from "react";
 import { motion, useScroll } from 'motion/react'
 import Modal from './Modal'
 import Transform from "./Transform";
+import MotionLay from './MotionLay'
+
 
 const Motion = () => {
     const { scrollYProgress } = useScroll()
@@ -54,6 +56,9 @@ const Motion = () => {
 
         <Modal />
         <Transform />
+
+
+        <MotionLay />
     </div >;
 };
 
