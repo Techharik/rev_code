@@ -16,10 +16,10 @@
 //Backend 
 -------------
 
-// --- Nodejs complete
+// --- Nodejs complete --✅
 // --- Docker
-// --- ORM for sql and noSQL
-// --- Databse mastery
+// --- ORM for sql and noSQL 
+// --- Databse mastery 
 // --- Security cors , cokkies and Testing .
 // --- Cache and Production setup -  queues and Pubsub . RabittMQ, Kafka
 // --- RPC - gql , rest , grpc , trpc .
