@@ -1,0 +1,58 @@
+// Node js 
+// Do work 
+// Test 
+// ORM, mongoose , prisma , DRIZZLE.
+// ops, Docker setup , CI / CD 
+// monorepo setup ,
+
+//Frontend .
+------------
+
+// -- Design system  -- frontend - animation motion , UI, storybook , Test                 ----Clean UI
+// -- Projects       -- context Management (tools) , customHooks , libs , Design Patterns ,----
+// -- Advance        -- production apps (docs) , Advance UI application , flows appications , Canvas Applications . machine coding 
+
+
+//Backend 
+-------------
+
+// --- Nodejs complete
+// --- Docker
+// --- ORM for sql and noSQL
+// --- Databse mastery
+// --- Security cors , cokkies and Testing .
+// --- Cache and Production setup -  queues and Pubsub . RabittMQ, Kafka
+// --- RPC - gql , rest , grpc , trpc .
+// --- Payment Gateways -- razorpay , paypal , stripe .
+// --- Authentication and authorization -- magic links OTP Based etc .
+// --- Oauth , google , facebook , email password , phonenumber , MFA , authenticator app .
+// --- Websocket  
+// --- Webrtc protocols
+// --- Advance streams and processing , threads and concurrency .
+// --- Bulk processing , Monitoring . 
+// --- microservices , monolithics , monorepoes , Event Driven Development .
+// --- Test Driven Development , Domain Driven Development .  
+// --- Kubernetics .
+
+------------
+
+//Cloud .
+---------
+
+AWS - 
+Deploy - EC2 , S3 , clodefront ,  
+Container - ECS , EKS ,
+Database -   Amazon RDS ,
+Pipeline & connector -  Elastic Bean Stack (EBS) , ELB 
+Domain - Route 53 
+Codeless - AWS Amplify , lightsail , Code Pipline ,Cognito , IAM
+VPS - Amazon API Gateways , AWS lamda .
+
+Advance :
+
+--- NextJS .
+--- Python - Asyncio - FastAPI - ORM - AWS .
+--- RUST .
+--- GO , BASH 
+
+--- ffmpeg , Niche based , 
