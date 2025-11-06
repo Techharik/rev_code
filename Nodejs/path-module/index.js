@@ -28,3 +28,11 @@ const filePath = path.join(dataFolder, 'example.txt')
 fs.writeFileSync(filePath, 'Hello world I am Here')
 const readFile = fs.readFileSync(filePath, 'utf-8')
 console.log(readFile)
+
+// fs.appendFile -- add a new line to the file;
+
+// readFile and write file using async way
+
+fs.writeFile(filePath, 'jjee', (err) => {
+    console.log(err) //return null if not an error
+})
