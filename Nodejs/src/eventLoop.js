@@ -14,6 +14,4 @@ fs_1.default.readFile(__filename, function () {
     setTimeout(function () { return console.log('timeout'); }, 0);
     setImmediate(function () { return console.log('immediate'); });
 });
-// main --> tick -->promise ---> timeout ---> imediate (expected)
-// main --> promise -->tick ---> imedidate ---> timeout (result) --> depend on promise time taken those two varriesa and same for timeout and imediate is nondeterministic one
-// buffer ---- object that handle the binary data , file system operation , crypto , image processing
+

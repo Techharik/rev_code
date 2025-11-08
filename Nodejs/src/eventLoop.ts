@@ -31,3 +31,10 @@ console.log('main')
 
 
 // buffer ---- object that handle the binary data , file system operation , crypto , image processing
+
+import { Buffer } from 'buffer';
+
+const bufferFromString = Buffer.from('Hello');
+
+// Buffer , alloc - allocate a buffer for Like capacity
+console.log(bufferFromString)
