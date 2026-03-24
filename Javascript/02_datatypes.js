@@ -14,7 +14,8 @@ a = "sabari"; //the value is not changed it reassigne the value is memory is cha
 //string - charater all;
 
 let s = "str";
-console.log(typeof s);
+const x = 3;
+consol.log(typeof s);
 
 //basic ops in string concat, slice , trim , replace , checks
 
