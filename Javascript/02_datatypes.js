@@ -102,7 +102,7 @@ console.log(arr.indexOf(3)); //return the index
 console.log(arr.lastIndexOf(3)) //start from end and find
 //using tha find methos
 
-console.log('find --- ', arr.find((x) => x > 2)) //takes of  a function and return the matched conditions
+console.log('find --- ', arr.find((x) => x > 2)) //takes of  a function and return first the matched conditions
 
 console.log('find --- ', arr.findIndex((x) => x > 2)) //takes of  a function and return the matched conditions
 console.log('find --- ', arr.findLastIndex((x) => x > 2)) //takes of  a function and return the matched conditions
@@ -115,7 +115,7 @@ console.log('find --- ', arr.findLastIndex((x) => x > 2)) //takes of  a function
 
 // console.log(arr.sort()); //[ 1, 10, '2', 20, 3, 3 ] -- it works good for the the chars alphabets not for numbver
 console.log(arr.sort((a, b) => b - a)); // use combare functions: desc
-console.log(arr.sort((a, b) => a - b)); // use combare functions: desc
+console.log(arr.sort((a, b) => a - b)); // use combare functions: asc
 
 
 console.log(arr.at(1))

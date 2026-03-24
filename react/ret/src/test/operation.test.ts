@@ -52,7 +52,7 @@ describe("Math Utilities", () => {
     test('Check the test Cases', () => {
         expect({ 'a': 1 }).toEqual({ 'a': 1 }) //deepEqual check th contents:
         expect({ 'a': undefined }).toEqual({}) //pass - must be fail
-        expect({ 'a': undefined }).toStrictEqual({ 'a': undefined }) //PASS - check strictly with undfiend cease and ucntion cases
+        expect({ 'a': undefined }).toStrictEqual({ 'a': undefined }) //PASS - check strictly with undfiend cease and fucntion cases
         expect([1, 2, 3]).toContain(2) //check the value  is there
         expect('Hello').toContain('H') //all itearable
         const users = [{ name: 'Hari' }];
