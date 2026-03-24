@@ -89,7 +89,7 @@ console.log(obje3.greet())
 
 function Person(name, age) {
     this.name = name,
-        this.age = age
+    this.age = age
 }
 
 const person1 = new Person('hari', 34) //new keyword is import else the this keyword refer to the global object.
@@ -134,7 +134,7 @@ console.log(worker1);
 
 function Animal(name, age) {
     this.name = name,
-        this.age = age
+    this.age = age
 }
 
 Animal.prototype.speek = function () {
@@ -232,7 +232,7 @@ for (const myprop of myarr) {
 
 Object.defineProperty(newObj, "name", {
     enumerable: false, //cannot read or loop
-    writable: false, //cannot re write the property
+    writable: false, //cannot rewrite the property
     configurable: false //cannot delete the property
 })
 
@@ -268,7 +268,7 @@ let myaddress = {
     city: 'odc'
 };
 
-Object.isFrozen(myaddress);
+console.log(Object.isFrozen(myaddress))
 
 myaddress.add = 'yy'
 console.log(myaddress)
