@@ -9,14 +9,13 @@
 let a = "hari";
 a = "sabari"; //the value is not changed it reassigne the value is memory is changed permannaty immutable;
 
-//primritive ds - string , number , boolean , null ,undefiend , Bigint , symbol;
+//primitive ds - string , number , boolean , null ,undefined , Bigint , symbol;
 
-//string - charater all;
+//string - character all;
 
 let s = "str";
 const x = 3;
-consol.log(typeof s);
-
+console.log(typeof s);
 //basic ops in string concat, slice , trim , replace , checks
 
 console.log(s + "hhh"); //concat
