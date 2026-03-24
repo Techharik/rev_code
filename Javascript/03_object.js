@@ -266,8 +266,8 @@ console.log(objectNew.represent)
 let myaddress = {
     add: 'Dind',
     city: 'odc'
-};
-
+};   
+  
 console.log(Object.isFrozen(myaddress))
 
 myaddress.add = 'yy'
