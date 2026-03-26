@@ -1,10 +1,14 @@
+import { cacheLife, cacheTag } from "next/cache";
 import React, { Suspense } from "react";
 
 const List = async () => {
+  "use cache";
+  cacheLife("hours");
+  cacheTag("posts");
   const data = await fetch("https://fakestoreapi.com/carts").then((response) =>
     response.json(),
   );
-  console.log(data);
+  //   console.log(data);
   return (
     <div>
       <Suspense>
