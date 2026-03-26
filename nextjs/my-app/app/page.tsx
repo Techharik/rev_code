@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
             >
               Templates
             </a>{" "}
-            or the{" "}
+            or the
             <a
               href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               className="font-medium text-zinc-950 dark:text-zinc-50"
@@ -60,6 +61,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <Link href={"/cart"}>cart</Link>
     </div>
   );
 }
