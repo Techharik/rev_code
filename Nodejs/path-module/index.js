@@ -1,38 +1,31 @@
-const path = require('path')
+import path, { dirname } from "path";
+import { fileURLToPath } from "url";
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 //some common methods in nodejs path ;
+console.log(__dirname);
+// console.log(path.dirname(__filename));
+// console.log(path.basename(__filename));
+// console.log(path.extname(__filename));
 
-console.log(path.dirname(__filename))
-console.log(path.basename(__filename))
-console.log(path.extname(__filename))
-
-const joinPath = path.join('hari', 'sa'); //joined the path
-const resolvePath = path.resolve('hari', 'sa'); //append with absolute root path
-const normalizePath = path.normalize('sa', '//sa ..'); //Normalize path means // are merged to single .. go to top one folder like that return a absoluet url at the end
-console.log(resolvePath)
-console.log(normalizePath)
+const joinPath = path.join("hari", "sa"); //joined the path
+const resolvePath = path.resolve("hari", "sa"); //append with absolute root path
+const normalizePath = path.normalize("sa", "//sa .."); //Normalize path means // are merged to single .. go to top one folder like that return a absoluet url at the end
+console.log(resolvePath);
+console.log(normalizePath);
 
 // File system:
+import fs from "fs/promises";
 
-const fs = require('fs');
+async function main() {
+  await fs.mkdir("logs", { recursive: true });
 
-const dataFolder = path.join(__dirname, 'data');
+  await fs.writeFile("logs/app.log", "Started");
 
-if (!fs.existsSync(dataFolder)) {
-    fs.mkdirSync(dataFolder);
-    console.log('folder created');
+  const data = await fs.readFile("logs/app.log", "utf-8");
+
+  console.log(data);
 }
 
-//write file in nodejs
-const filePath = path.join(dataFolder, 'example.txt')
-fs.writeFileSync(filePath, 'Hello world I am Here')
-const readFile = fs.readFileSync(filePath, 'utf-8')
-console.log(readFile)
-
-// fs.appendFile -- add a new line to the file;
-
-// readFile and write file using async way
-
-fs.writeFile(filePath, 'jjee', (err) => {
-    console.log(err) //return null if not an error
-})
+main();
